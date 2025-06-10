@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Más Baratas</title>
+    <style>
+        body {
+            background-color: orange;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        li a:hover {
+            background-color: #ddd;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        .product-item h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .product-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .product-item {
+                width: calc(33.333% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Principal</a></li>
+    </ul>
+
+    <h1>Más Baratas:</h1>
+    <h2>"Para más información, da click en la imagen que desee"</h2>
+
+    <div class="product-container">
+        <div class="product-item">
+            <h2>KTM Duke 200 2025: $81,999 MXN</h2>
+            <a href="https://www.ktm.com/es-mx/models/naked-bike/2025-ktm-200-duke.html">
+                <img src="img/KTM.png" alt="KTM Duke 200 2025">
+            </a>
+        </div>
+
+        <div class="product-item">
+            <h2>KTM Duke 250 2024: $99,900 MXN</h2>
+            <a href="https://www.ktm.com/es-mx/models/naked-bike/2024-ktm-250-duke.html">
+                <img src="img/250.png" alt="KTM Duke 250 2024">
+            </a>
+        </div>
+
+        <div class="product-item">
+            <h2>KTM Duke 390 2024: $138,900 MXN</h2>
+            <a href="https://www.ktm.com/es-mx/models/naked-bike/2024-ktm-390-duke.html">
+                <img src="img/390.png" alt="KTM Duke 390 2024">
+            </a>
+        </div>
+
+        <div class="product-item">
+            <h2>KTM 200 RC 2024: $95,900 MXN</h2>
+            <a href="https://www.ktm.com/es-mx/models/supersport/2024-ktm-rc-200.html">
+                <img src="img/ktm-rc-200-abs-2024-negro.png" alt="KTM 200 RC 2024">
+            </a>
+        </div>
+
+        <div class="product-item">
+            <h2>KTM Duke 125 2024: $109,999 MXN</h2>
+            <a href="https://www.ktm.com/es-es/models/naked-bike/2024-ktm-125-duke.html">
+                <img src="img/F4003X1.png" alt="KTM Duke 125 2024">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
